@@ -431,6 +431,7 @@
 		<ImageLoad onmatch="include">
 			<!-- Contains : This section targets .dll sideloading attempts from userland filespace-->
 			<ImageLoaded condition="begin with">C:\Users\</ImageLoaded>
+			<ImageLoaded condition="begin with">C:\PerfLogs\</ImageLoaded>
 			<ImageLoaded condition="contains">\ProgramData\</ImageLoaded>		
 			<ImageLoaded condition="contains">\Downloads\</ImageLoaded>
 			<ImageLoaded condition="contains">\Windows\Fonts</ImageLoaded>
@@ -590,6 +591,7 @@
 			<TargetFilename name="Malware Windows Fonts" condition="begin with">C:\Windows\Temp</TargetFilename> <!-- FT Windows Temp -->
 			<TargetFilename name="Malware Windows Fonts" condition="begin with">C:\Windows\Fonts</TargetFilename> <!-- FT Windows Fonts -->
 			<TargetFilename name="Malware Windows Fonts" condition="begin with">C:\Windows\Tasks</TargetFilename> <!-- FT Windows Tasks -->
+			<TargetFilename name="Malware Windows Fonts" condition="begin with">C:\PerfLogs</TargetFilename> <!-- Directory Used by performance monitor -->
 		</FileCreate>
 	</RuleGroup>
 
