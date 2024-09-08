@@ -1288,6 +1288,9 @@
 			<Image condition="end with">\CompatTelRunner.exe</Image>
 			<Image condition="end with">\WerFault.exe</Image>
 			<Image condition="end with">\DllHost.exe</Image>
+			<Image condition="end with">\SearchIndexer.exe</Image>
+			<TargetFilename condition="begin with">C:\Windows\System32\GroupPolicy\DataStore</TargetFilename>
+			<TargetFilename condition="begin with">C:\Windows\Prefetch</TargetFilename>
 		</FileDeleteDetected>
 	</RuleGroup>
 
