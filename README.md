@@ -41,7 +41,6 @@ Below are a list of changes made since forking
 - Include 'C:\Windows\Fonts'
 - Include 'C:\Users\Public'
 - Include '\appdata\local\'
-- Include 'HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks' (scheduled task monitoring through registry)
 
 ###  EVENT ID 17 & 18 (NAMED PIPES)
 - Include '\msagent_'
