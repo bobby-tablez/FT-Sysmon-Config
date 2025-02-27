@@ -1264,13 +1264,19 @@
 		
 		<!--DATA: EventType, RuleName, UtcTime, ProcessGuid, ProcessId, Image, Type -->
 	
-	<!--
 	<RuleGroup name="" groupRelation="or">
-		<ProcessTampering onmatch="exclude">
-			<Image condition="begin with">C:\Program Files (x86)\Microsoft\Edge\Application\</Image>
+		<ProcessTampering onmatch="include">
+			<Image condition="begin with">C:\ProgramData\</Image>
+			<Image condition="begin with">C:\Users\Public\</Image>
+			<Image condition="begin with">C:\Windows\Fonts\</Image>
+			<Image condition="begin with">C:\Windows\Temp\</Image>
+			<Image condition="begin with">C:\Intel\</Image>
+			<Image condition="begin with">C:\PerfLogs\</Image>	
+			<Image condition="contains">\Appdata\Local\</Image>
+			<Image condition="contains">\AppData\Roaming\</Image>		
 		</ProcessTampering>
 	</RuleGroup>
-	-->
+
 
 	<!--SYSMON EVENT ID 26 : File DELETE LOGGED-->
 		<!--EVENT 26: "File Delete Logged"-->
@@ -1290,8 +1296,10 @@
 			<Image condition="end with">\WerFault.exe</Image>
 			<Image condition="end with">\DllHost.exe</Image>
 			<Image condition="end with">\SearchIndexer.exe</Image>
+			<TargetFilename condition="contains">\AppData\Roaming\Microsoft\Windows\Recent\</TargetFilename>
 			<TargetFilename condition="begin with">C:\Windows\System32\GroupPolicy\DataStore</TargetFilename>
 			<TargetFilename condition="begin with">C:\Windows\Prefetch</TargetFilename>
+			<TargetFilename condition="begin with">C:\ProgramData\Microsoft\Windows\WER\</TargetFilename>
 		</FileDeleteDetected>
 	</RuleGroup>
 
