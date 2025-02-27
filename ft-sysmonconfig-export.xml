@@ -1300,6 +1300,7 @@
 			<TargetFilename condition="begin with">C:\Windows\System32\GroupPolicy\DataStore</TargetFilename>
 			<TargetFilename condition="begin with">C:\Windows\Prefetch</TargetFilename>
 			<TargetFilename condition="begin with">C:\ProgramData\Microsoft\Windows\WER\</TargetFilename>
+			<TargetFilename condition="begin with">C:\Program Files\WindowsApps\Deleted\</TargetFilename>
 		</FileDeleteDetected>
 	</RuleGroup>
 
