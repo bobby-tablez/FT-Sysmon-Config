@@ -31,6 +31,7 @@ Below are a list of changes made since forking
 - Include '.lnk'
 - Include '.url'
 - Exclude '\WerFault.exe'
+- Include 'asp, aspx' file extensions
 ###  EVENT ID 12 & 13 & 14 (REGISTRY MODIFICATION)
 - Include 'reg.exe'
 - Include 'regedit.exe'
