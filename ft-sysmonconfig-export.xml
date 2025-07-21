@@ -560,6 +560,8 @@
 			<TargetFilename condition="end with">.ocx</TargetFilename> <!--Microsoft:ActiveX-->
 			<TargetFilename condition="end with">.lnk</TargetFilename> <!--FT Microsoft:LNK-->
 			<TargetFilename condition="end with">.url</TargetFilename> <!--FT Microsoft:URL-->
+			<TargetFilename condition="end with">.asp</TargetFilename> <!--FT Microsoft:ASP-->
+			<TargetFilename condition="end with">.aspx</TargetFilename> <!--FT Microsoft:ASPX-->
 			<TargetFilename condition="end with">proj</TargetFilename><!--Microsoft:MSBuild:Script: [ https://twitter.com/subTee/status/885919612969394177 ] -->
 			<TargetFilename condition="end with">.sln</TargetFilename><!--Microsoft:MSBuild:Script: [ https://twitter.com/subTee/status/885919612969394177 ] -->
 			<TargetFilename condition="end with">.xls</TargetFilename><!--Microsoft [ https://medium.com/@threathuntingteam/msxsl-exe-and-wmic-exe-a-way-to-proxy-code-execution-8d524f642b75 ] -->
