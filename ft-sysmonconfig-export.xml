@@ -948,6 +948,11 @@
 				<PipeName condition="begin with">\mypipe-h</PipeName>
 				<PipeName condition="begin with">\windows.update.manager</PipeName>
 				<PipeName condition="begin with">\win_svc</PipeName>
+				<!-- Kimsuky EndClient RAT Remote Shell Named Pipes https://www.0x0v1.com/endclientrat/ -->
+				<PipeName condition="contains">_stdin_read</PipeName>
+				<PipeName condition="contains">_stdin_write</PipeName>
+				<PipeName condition="contains">_stdout_read</PipeName>
+				<PipeName condition="contains">_stdout_write</PipeName>
 			</PipeEvent>
 		</RuleGroup>
 
