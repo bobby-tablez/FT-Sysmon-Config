@@ -115,6 +115,7 @@
 			<Image condition="is">C:\Windows\system32\sndVol.exe</Image> <!--Windows: Volume control-->
 			<Image condition="is">C:\Windows\system32\sppsvc.exe</Image> <!--Windows: Software Protection Service-->
 			<Image condition="is">C:\Windows\system32\wbem\WmiApSrv.exe</Image> <!--Windows: WMI performance adapter host process-->
+			<Image condition="is">C:\Windows\System32\MoUsoCoreWorker.exe</Image> <!--Windows: background synchronization and upload operations for Microsoft Office-->
 			<IntegrityLevel condition="is">AppContainer</IntegrityLevel> <!--Windows: Don't care about sandboxed processes right now. Will need to revisit this decision.-->
 			<ParentCommandLine condition="begin with">%%SystemRoot%%\system32\csrss.exe ObjectDirectory=\Windows</ParentCommandLine> <!--Windows:CommandShell: Triggered when programs use the command shell, but doesn't provide attribution for what caused it-->
 			<ParentCommandLine condition="is">C:\windows\system32\wermgr.exe -queuereporting</ParentCommandLine> <!--Windows:Windows error reporting/telemetry-->
@@ -608,6 +609,7 @@
 			<Image condition="is">C:\Windows\system32\CompatTelRunner.exe</Image> <!-- Windows: Windows 10 app, creates tons of cache files-->
 			<Image condition="is">\\?\C:\Windows\system32\wbem\WMIADAP.EXE</Image> <!-- Windows: WMI Performance updates-->
 			<Image condition="is">C:\Windows\system32\mobsync.exe</Image> <!--Windows: Network file syncing-->
+			<Image condition="is">C:\Windows\System32\mousocoreworker.exe</Image> <!--Windows: background synchronization and upload operations for Microsoft Office-->
 			<TargetFilename condition="begin with">C:\Windows\system32\DriverStore\Temp\</TargetFilename> <!-- Windows: Temp files by DrvInst.exe-->
 			<TargetFilename condition="begin with">C:\Windows\system32\wbem\Performance\</TargetFilename> <!-- Windows: Created in wbem by WMIADAP.exe-->
 			<TargetFilename condition="begin with">C:\Windows\Installer\</TargetFilename> <!--Windows:Installer: Ignore MSI installer files caching-->
@@ -1303,6 +1305,7 @@
 			<Image condition="end with">\WerFault.exe</Image>
 			<Image condition="end with">\DllHost.exe</Image>
 			<Image condition="end with">\SearchIndexer.exe</Image>
+			<Image condition="is">C:\Windows\System32\mousocoreworker.exe</Image> <!--Windows: background synchronization and upload operations for Microsoft Office-->
 			<TargetFilename condition="contains">\AppData\Roaming\Microsoft\Windows\Recent\</TargetFilename>
 			<TargetFilename condition="begin with">C:\Windows\System32\GroupPolicy\DataStore</TargetFilename>
 			<TargetFilename condition="begin with">C:\Windows\Prefetch</TargetFilename>
